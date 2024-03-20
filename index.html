@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Text Editor</title>
+<style>
+
+</style>
+</head>
+<body>
+  
+<div class="header">
+  <img src="https://lp2.email.ibm.com/rs/298-RSE-650/images/IBM_logo.png" alt="Icon">
+  <h1>Text Editor</h1>
+</div>
+
+<div class="container">
+  <div class="left-container">
+    <h2>Input Text:</h2>
+    <textarea id="inputText" class="textarea" placeholder="Enter text here..."></textarea>
+    <button class="button" id="splitBtn">Split Text</button>
+  </div>
+  
+  <div class="right-container">
+    <h2>Output List:</h2>
+    <div class="outputList" id="outputList"></div>
+    <button class="button copy-button" onclick="copyText()">Copy Text</button>
+    <div class="alert" id="copyAlert">Text copied to clipboard!</div>
+  </div>
+</div>
+
+<div class="footer"></div>
+
+<script src="/script.js">
+</script>
+
+</body>
+</html>
