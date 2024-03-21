@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
   <title>Text Editor</title>
+  <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-bee-189-439428.png" type="image/x-icon">
 <style>
 
 </style>
@@ -21,20 +25,20 @@
   <div class="left-container">
     <h2>Input Text:</h2>
     <textarea id="inputText" class="textarea" placeholder="Enter text here..."></textarea>
-    <button class="button" id="splitBtn">Split Text</button>
+    <button class="button1" id="splitBtn">Split Text</button>
   </div>
   
   <div class="right-container">
     <h2>Output List:</h2>
     <div class="outputList" id="outputList"></div>
-    <button class="button copy-button" onclick="copyText()">Copy Text</button>
+    <button class="button2 copy-button" onclick="copyText()">Copy Text</button>
     <div class="alert" id="copyAlert">Text copied to clipboard!</div>
   </div>
 </div>
 
 <div class="footer"></div>
 
-<script src="script.js">
+<script src="/script.js">
 </script>
 
 </body>
