@@ -15,6 +15,7 @@ splitBtn.addEventListener("click", function() {
         });
     }
     inputTextElement.value = ""; // Clear the input area
+    
 });
 function copyText() {
     let outputList = document.getElementById("outputList").innerText;
@@ -24,7 +25,13 @@ function copyText() {
             alertBox.style.display = "block";
             setTimeout(function() {
                 alertBox.style.display = "none";
-            }, 2000);
+            }, 15000);
+            let rightContainer = document.getElementById('countItemsID');
+    let listItems = document.querySelectorAll("li").length;
+    let displayItemsN = document.createElement("span");
+    displayItemsN.innerHTML = 'You have ' + listItems + ' items';
+            //console.log(displayItemsN);
+    rightContainer.appendChild(displayItemsN)
         },
         function() {
             alert("Copy failed. Please try again.");
