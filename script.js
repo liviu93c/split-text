@@ -24,16 +24,13 @@ function copyText() {
             let alertBox = document.getElementById("copyAlert");
             alertBox.style.display = "block";
 
-            let rightContainer = document.getElementById('countItemsID');
+            let rightContainer = document.getElementById('counted');
             let listItems = document.querySelectorAll("li").length;
-            let displayItemsN = document.createElement("span");
-            displayItemsN.innerHTML = 'You have ' + listItems + ' items';
-            
-            rightContainer.appendChild(displayItemsN)
+            rightContainer.innerHTML = listItems;
 
             setTimeout(function() {
                 alertBox.style.display = "none";
-            }, 5000);
+            }, 15000);
             
         },
         function() {
@@ -42,12 +39,3 @@ function copyText() {
     );
 }
 
-
-let clickCounter = 0;
-splitBtn.onclick = function() {
-  clickCounter++;
-  let countItemsDiv = document.getElementById("countItemsID");
-  if (clickCounter==2) {
-    countItemsDiv.innerHTML = "";
-  }
-};
