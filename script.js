@@ -5,6 +5,13 @@ splitBtn.addEventListener("click", function() {
     const words = inputText.match(/\(([^)]+)\)|\b\w+\b/g); // Match words within parentheses and standalone words
     let outputList = document.getElementById("outputList");
     outputList.innerHTML = ""; // Clear previous list items
+
+    // Check if copyAlert section has content
+    let copyAlert = document.getElementById("copyAlert");
+    if (copyAlert.innerText.trim() !== "") {
+        copyAlert.style.display = "none"; // Hide the copyAlert section
+    }
+    
     if (words) {
         words.forEach(function(word) {
             // Remove parentheses if present
